@@ -1,11 +1,185 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Friends
-    </ion-title>
+    <ion-title>Friends</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    {{ item }}
+  </ion-item>
+</ion-list>
 
+
+
+<button ion-button id="testo" color="blue">
+    <ion-icon name="ios-chatboxes-outline"></ion-icon>
+</button>
+
+
+
+    
+    
+
+    <ion-item-group>
+        <ion-item-divider color="blue">A</ion-item-divider>
+        <ion-item>Armin</ion-item>
+        <ion-item>Adolf</ion-item>
+        <ion-item>Anton</ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">B</ion-item-divider>
+        <ion-item id="test">Barthomolaeus</ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider color="blue">C</ion-item-divider>
+        <ion-item>Carl-Heinz</ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider color="blue">D</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider color="blue">E</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    <ion-item-group>
+        <ion-item-divider color="blue">F</ion-item-divider>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+    </ion-item-group>
+    
+    
 </ion-content>
+

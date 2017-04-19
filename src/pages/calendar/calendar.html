@@ -7,11 +7,9 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+
+<span ion-datepicker (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
+        <span>{{localDate | date}} <ion-icon name="clipboard" item-left ></ion-icon> </span>
+    </span>
+
 </ion-content>
