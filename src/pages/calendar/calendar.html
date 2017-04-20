@@ -1,5 +1,16 @@
 <ion-header>
   <ion-navbar>
+      <ion-buttons end>
+        <button ion-button large id="AddEvent" color="dark" clear>
+         <ion-icon name="ios-add-circle-outline"></ion-icon>
+        </button>
+      </ion-buttons>
+
+      <ion-buttons start>
+        <span ion-datepicker id="Calendar" (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
+        <span>{{localDate | date}} <ion-icon name="clipboard-outline" item-left ></ion-icon> </span>
+        </span>
+      </ion-buttons>
     <ion-title>
       Calendar
     </ion-title>
@@ -7,10 +18,5 @@
 </ion-header>
 
 <ion-content>
-
-<span ion-datepicker (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
-        <span>{{localDate | date}} <ion-icon name="clipboard" item-left ></ion-icon> </span>
-    </span>
-
 
 </ion-content>
