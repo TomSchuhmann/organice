@@ -1,40 +1,42 @@
-<ion-header>
+﻿<ion-header>
   <ion-navbar>
     <ion-buttons end>
-        <button ion-button large color="dark" clear>
-         <ion-icon id="AddP" name="person-add-outline"></ion-icon>
-        </button>
-      </ion-buttons>
-    
+      <button ion-button large color="dark" clear>
+        <ion-icon id="AddP" name="person-add-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons start>
+      <button ion-button item-left large id="Logo" color="dark" clear>
+        <ion-icon name="logo-apple"></ion-icon>
+      </button>
+    </ion-buttons>
+
     <ion-title>
       Friends
     </ion-title>
-  
+
   </ion-navbar>
 </ion-header>
 
+
 <ion-content>
 
-<ion-searchbar (ionInput)="getItems($event)"> </ion-searchbar>
+  <ion-searchbar (ionInput)="getItems($event)"> </ion-searchbar>
+
   <ion-list>
     <ion-item *ngFor="let item of items">
-      {{ item }}<button ion-button item-right large color="dark" clear>
-    <ion-icon id="Chat" name="chatboxes-outline"></ion-icon>
-</button>
-<button ion-button item-right large color="dark" clear>
-    <ion-icon id="Chat" name="person-outline"></ion-icon>
-</button>
+      {{ item }}
+
+      <button ion-button item-right color="dark" clear>
+        <ion-icon id="Chat" name="chatboxes"></ion-icon>
+      </button>
+
+      <button ion-button item-right color="dark" clear>
+        <ion-icon id="Chat" name="person"></ion-icon>
+      </button>
     </ion-item>
+
   </ion-list>
 
-<ion-list>
-  <ion-item *ngFor="let item of items" >
-    {{ item }}
-    
-  </ion-item>
-  
-</ion-list>
-
-
 </ion-content>
-

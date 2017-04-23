@@ -6,7 +6,7 @@ import { CalendarPage } from '../calendar/calendar';
 import { HomePage } from '../home/home';
 import { SettingsPage } from '../settings/settings';
 import { FriendsPage } from '../friends/friends';
-
+import { NavController } from 'ionic-angular';
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -20,7 +20,13 @@ export class TabsPage {
   tab5Root: any = SettingsPage;
   tab6Root: any = FriendsPage;
 
-  constructor() {
-
+  constructor(public navCtrl: NavController) {
+      
   }
+
+  ionViewDidEnter(){
+      this.navCtrl.parent.select(2);  
+  }
+
+ 
 }

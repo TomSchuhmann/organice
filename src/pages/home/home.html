@@ -6,27 +6,35 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding  style="background-color:floralwhite">
   <!--<div *ngFor="let item of data">
     <textarea>Name: {{item.Name}}</textarea>
     <br/>
     <textarea>Description: {{item.Description}}</textarea>
   </div>-->
-  <ion-card *ngFor="let item of data">
 
-    <ion-item>
-      <ion-avatar item-left>
-        <!--<img src="">-->
-      </ion-avatar>
-      <h2>{{item.HostName}}</h2>
-      <p>29.01.1994</p>
+
+  <ion-card *ngFor="let item of data" style="background-color:#ffd9b3">
+
+    <ion-item style="background-color:#ffd9b3">
+      
+
+          <ion-avatar item-left>
+            <!--<img src="">-->
+          </ion-avatar>
+          <h2>{{item.HostName}}</h2>
+          <p>29.01.1994</p>
+
+          <p>{{item.Name}}</p>
+        
     </ion-item>
 
-    <!--<img src="">-->
+    <img src="{{item.PictureID}}"/>
 
-    <ion-card-content>
+    <ion-card-content style="background-color:#ffbf80">
       <p>{{item.Description}}</p>
     </ion-card-content>
+    
 
     <ion-row>
       <!--<ion-col>

@@ -1,10 +1,18 @@
 ﻿<ion-header>
   <ion-navbar>
-      <ion-buttons end>
-        <button ion-button large id="settingsbutton" color="dark" clear>
-           <ion-icon id="Settings" name="settings-outline"></ion-icon>
-        </button>
-      </ion-buttons>
+    <ion-buttons end>
+      <button ion-button large id="settingsbutton" color="dark" clear>
+        <ion-icon id="Settings" name="settings-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons start>
+      <button ion-button item-left large id="Logo" color="dark" clear>
+        <ion-icon name="logo-apple"></ion-icon>
+      </button>
+
+
+    </ion-buttons>
     <ion-title>
       Profile
     </ion-title>
@@ -14,7 +22,56 @@
 
 
 <ion-content padding>
+  <ion-row>
+    <ion-col width="30%">
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="img/marty-avatar.png">
+        </ion-avatar>
+      </ion-item>
+    </ion-col>
 
-<ion-input type="text">
-</ion-input>
+    <ion-col width="30%">
+      <ion-input id="status" stype="text">
+      </ion-input>
+    </ion-col>
+
+    <ion-col width="30%">
+      <p>Kreisdia</p>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card id="bio">
+        <ion-item>
+          <h2>Bio</h2>
+        </ion-item>
+        <ion-card-content>
+          <p>Hi</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card id="photo_albums">
+        <ion-item>
+          <h2>Photos</h2>
+        </ion-item>
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-card id="timelineprofile">
+    <ion-item>
+      <h2>Timeline</h2>
+    </ion-item>
+    <ion-card-content>
+      <p>hab Kacka gemacht</p>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

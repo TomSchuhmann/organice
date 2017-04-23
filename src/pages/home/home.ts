@@ -22,9 +22,6 @@ export class HomePage {
         var creds = { username: user, password: pw };
         var headers = new Headers();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');
-        headers.append('Access-Control-Allow-Origin', '*');
-  
-    
 
         this.http.post('http://www.orga-nicer.org/organice/selectevents.php', creds, {
             headers: headers
