@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html'
+  
 })
 export class ProfilePage {
 
