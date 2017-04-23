@@ -5,7 +5,8 @@ import { NavController } from 'ionic-angular';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
-
+import { EventviewPage } from '../eventview/eventview';
+    
 
 @Component({
     selector: 'page-home',
@@ -13,6 +14,7 @@ import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
 })
 export class HomePage {
     public data: string;
+    public firstpassed: any;
     constructor(public navCtrl: NavController, public http: Http) {
 
     }
@@ -36,5 +38,11 @@ export class HomePage {
     }
     logError(err) {
         console.error('There was an error: ' + err);
+    }
+
+    gotoEvent() {
+        this.navCtrl.push(EventviewPage, {
+                                   firstPassed: "name"
+                                });
     }
 }

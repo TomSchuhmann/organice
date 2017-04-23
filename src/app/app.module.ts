@@ -8,6 +8,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 import { FriendsPage } from '../pages/friends/friends';
 import { TabsPage } from '../pages/tabs/tabs';
+import { EventviewPage } from '../pages/eventview/eventview';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,6 +18,7 @@ import { DatePickerModule } from 'datepicker-ionic2';
   declarations: [
       MyApp,
       WelcomePage,
+      EventviewPage,
     HomePage,
 	SettingsPage,
 	FriendsPage,
@@ -31,7 +33,8 @@ import { DatePickerModule } from 'datepicker-ionic2';
   entryComponents: [
       MyApp,
       WelcomePage,
-    HomePage,
+      HomePage,
+      EventviewPage,
     SettingsPage,
 	FriendsPage,
 	CalendarPage,
