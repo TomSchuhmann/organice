@@ -1,6 +1,9 @@
 ﻿import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { Facebook, NativeStorage } from 'ionic-native';
+import { Http, Headers } from '@angular/http';
+import 'rxjs/Rx';
+import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
 /*
   Generated class for the Eventview page.
 
@@ -13,11 +16,40 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class EventviewPage {
 
-    public firstParam: any;
- 
-    constructor(public navCtrl: NavController, public params: NavParams) {
-        this.firstParam = params.get("firstPassed");
-        
+    public hostname: any;
+    public description: any;
+    public eventID: any;
+    public data: string;
+
+    constructor(public navCtrl: NavController, public params: NavParams, public http: Http) {
+        this.hostname = params.get("hostname");
+        this.eventID = params.get("eventID");
+        console.log("ID here: " + this.eventID);
+        this.loadevent();
+    }
+
+   
+  
+    loadevent() {
+        //var eventID = this.eventID;
+        var eventID = this.eventID;
+        var creds = { eventID: eventID };
+        var headers = new Headers();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+        this.http.post('http://www.orga-nicer.org/organice/selectspecificevents.php', creds, {
+            headers: headers
+        })
+            .map(res => res.json().Events) // extract object
+
+            .subscribe(
+            data => this.data = data, // here! paste res into variable data
+            err => this.logError(err),
+            () => console.log('Completed')
+            );
+    }
+    logError(err) {
+        console.error('There was an error: ' + err);
     }
 
   ionViewDidLoad() {

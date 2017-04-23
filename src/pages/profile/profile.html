@@ -65,9 +65,10 @@
     </ion-col>
   </ion-row>
 
-  <ion-card id="timelineprofile" *ngFor="let item of data">
+  <h2>Timeline</h2>
+  <ion-card id="timelineprofile" *ngFor="let item of data" (click)="gotoEvent(item.HostName, item.ID)">
     <ion-item>
-      <h2>Timeline</h2>
+      <h2>{{item.Name}}</h2>
     </ion-item>
     <ion-card-content>
       <p>{{item.Description}}</p>

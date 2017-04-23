@@ -40,9 +40,10 @@ export class HomePage {
         console.error('There was an error: ' + err);
     }
 
-    gotoEvent() {
+    gotoEvent(hostname, eventID) {
         this.navCtrl.push(EventviewPage, {
-                                   firstPassed: "name"
+            hostname: hostname,
+            eventID: eventID
                                 });
     }
 }

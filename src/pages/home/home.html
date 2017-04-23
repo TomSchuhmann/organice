@@ -14,7 +14,7 @@
   </div>-->
 
 
-  <ion-card *ngFor="let item of data" style="background-color:#ffd9b3" (click)="gotoEvent()">
+  <ion-card *ngFor="let item of data" style="background-color:#ffd9b3" (click)="gotoEvent(item.HostName, item.ID)">
 
     <ion-item style="background-color:#ffd9b3">
       
@@ -28,7 +28,7 @@
           <p>{{item.Name}}</p>
         
     </ion-item>
-
+     
     <img src="{{item.PictureID}}"/>
 
     <ion-card-content style="background-color:#ffbf80">

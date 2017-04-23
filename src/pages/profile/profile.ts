@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
+import { EventviewPage } from '../eventview/eventview';
 
 @Component({
   selector: 'page-profile',
@@ -13,12 +14,12 @@ import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
 export class ProfilePage {
 
     public data: string;
-   
+    public hostname: any;
     constructor(public navCtrl: NavController, public http: Http) {
 
     }
   ionViewWillEnter() {
-      var user = "Tom S";
+      var user = "Tom S"; //aus native storage holen
       
       var creds = { HostName: user};
       var headers = new Headers();
@@ -37,5 +38,13 @@ export class ProfilePage {
   }
   logError(err) {
       console.error('There was an error: ' + err);
+  }
+
+  gotoEvent(hostname, eventID) {
+      console.log("profile.ts eventID: " + eventID);
+      this.navCtrl.push(EventviewPage, {
+          hostname: hostname,
+          eventID: eventID
+      });
   }
 }

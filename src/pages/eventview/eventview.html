@@ -14,5 +14,9 @@
 
 
 <ion-content padding>
-  {{firstParam}}
+  <ion-card *ngFor="let item of data">
+    <p>Host: {{item.HostName}}</p>
+    <p>Description: {{item.Description}}</p>
+
+  </ion-card>
 </ion-content>
