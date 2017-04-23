@@ -72,4 +72,14 @@ export class FriendsPage {
       })
     }
   }
+
+  gotoprofile(){
+    //click auf Person führt zu profile
+  }
+
+  openChat(){
+    //click auf chatbubble führt öffnet chat
+  }
+  
+
 }
