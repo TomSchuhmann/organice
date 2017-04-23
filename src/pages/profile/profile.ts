@@ -18,7 +18,7 @@ export class ProfilePage {
 
     }
   ionViewWillEnter() {
-      var user = "";
+      var user = "Tom S";
       
       var creds = { HostName: user};
       var headers = new Headers();

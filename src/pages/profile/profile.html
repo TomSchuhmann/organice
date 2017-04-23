@@ -65,12 +65,12 @@
     </ion-col>
   </ion-row>
 
-  <ion-card id="timelineprofile">
+  <ion-card id="timelineprofile" *ngFor="let item of data">
     <ion-item>
       <h2>Timeline</h2>
     </ion-item>
     <ion-card-content>
-      <p>hab Kacka gemacht</p>
+      <p>{{item.Description}}</p>
     </ion-card-content>
   </ion-card>
 
