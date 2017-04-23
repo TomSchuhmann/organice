@@ -7,9 +7,9 @@
       </ion-buttons>
 
       <ion-buttons start>
-        <span ion-datepicker id="Calendar" (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
+        <span ion-datepicker (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
         <span>{{localDate | date}} <ion-icon name="clipboard-outline" item-left ></ion-icon> </span>
-        </span>
+    </span>
       </ion-buttons>
     <ion-title>
       Calendar
