@@ -1,4 +1,4 @@
-<ion-header>
+﻿<ion-header>
   <ion-navbar>
     <ion-title>
       Home
@@ -7,5 +7,46 @@
 </ion-header>
 
 <ion-content padding>
+  <!--<div *ngFor="let item of data">
+    <textarea>Name: {{item.Name}}</textarea>
+    <br/>
+    <textarea>Description: {{item.Description}}</textarea>
+  </div>-->
+  <ion-card *ngFor="let item of data">
 
+    <ion-item>
+      <ion-avatar item-left>
+        <!--<img src="">-->
+      </ion-avatar>
+      <h2>{{item.HostName}}</h2>
+      <p>29.01.1994</p>
+    </ion-item>
+
+    <!--<img src="">-->
+
+    <ion-card-content>
+      <p>{{item.Description}}</p>
+    </ion-card-content>
+
+    <ion-row>
+      <!--<ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col>-->
+      <ion-col center text-center>
+        <ion-note>
+          {{item.EventDate}}
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
 </ion-content>
