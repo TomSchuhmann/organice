@@ -5,7 +5,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
-import { ChatPage } from '../pages/chat/chat';
+import { SettingsPage } from '../pages/settings/settings';
 import { FriendsPage } from '../pages/friends/friends';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -18,7 +18,7 @@ import { DatePickerModule } from 'datepicker-ionic2';
       MyApp,
       WelcomePage,
     HomePage,
-	ChatPage,
+	SettingsPage,
 	FriendsPage,
     CalendarPage,
     ProfilePage,
@@ -32,7 +32,7 @@ import { DatePickerModule } from 'datepicker-ionic2';
       MyApp,
       WelcomePage,
     HomePage,
-    ChatPage,
+    SettingsPage,
 	FriendsPage,
 	CalendarPage,
     ProfilePage,

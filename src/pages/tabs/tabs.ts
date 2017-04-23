@@ -4,7 +4,7 @@
 import { ProfilePage } from '../profile/profile';
 import { CalendarPage } from '../calendar/calendar';
 import { HomePage } from '../home/home';
-import { ChatPage } from '../chat/chat';
+import { SettingsPage } from '../settings/settings';
 import { FriendsPage } from '../friends/friends';
 
 @Component({
@@ -17,7 +17,7 @@ export class TabsPage {
   tab2Root: any = ProfilePage;
   tab3Root: any = CalendarPage;
   tab4Root: any = HomePage;
-  tab5Root: any = ChatPage;
+  tab5Root: any = SettingsPage;
   tab6Root: any = FriendsPage;
 
   constructor() {
