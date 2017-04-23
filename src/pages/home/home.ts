@@ -6,7 +6,7 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
 import { EventviewPage } from '../eventview/eventview';
-    
+import { AddeventviewPage } from '../addeventview/addeventview';
 
 @Component({
     selector: 'page-home',
@@ -45,5 +45,9 @@ export class HomePage {
             hostname: hostname,
             eventID: eventID
                                 });
+    }
+
+    gotoCreateEvent() {
+        this.navCtrl.push(AddeventviewPage);
     }
 }
