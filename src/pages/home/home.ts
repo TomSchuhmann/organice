@@ -7,6 +7,7 @@ import 'rxjs/Rx';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
 import { EventviewPage } from '../eventview/eventview';
 import { AddeventviewPage } from '../addeventview/addeventview';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
     selector: 'page-home',
@@ -49,5 +50,10 @@ export class HomePage {
 
     gotoCreateEvent() {
         this.navCtrl.push(AddeventviewPage);
+    }
+    gotoProfile(hostname) {
+        this.navCtrl.push(ProfilePage, {
+            hostname: hostname
+        });
     }
 }

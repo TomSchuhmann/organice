@@ -1,6 +1,6 @@
 ﻿import { Component } from '@angular/core';
 import { Facebook, NativeStorage } from 'ionic-native';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
@@ -15,11 +15,11 @@ export class ProfilePage {
 
     public data: string;
     public hostname: any;
-    constructor(public navCtrl: NavController, public http: Http) {
-
+    constructor(public navCtrl: NavController, public params: NavParams, public http: Http) {
+        this.hostname = params.get("hostname");
     }
   ionViewWillEnter() {
-      var user = "Tom S"; //aus native storage holen
+      var user = this.hostname; //aus native storage holen
       
       var creds = { HostName: user};
       var headers = new Headers();
