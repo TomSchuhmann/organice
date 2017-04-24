@@ -14,9 +14,18 @@
 
 
 <ion-content padding>
+  
   <ion-card *ngFor="let item of data">
-    <p>Host: {{item.HostName}}</p>
-    <p>Description: {{item.Description}}</p>
+    <button ion-button item-right color="dark" clear (click)="deleteevent(item.ID)" *ngIf="item.HostName==username">
+      <ion-icon name="trash" ></ion-icon>
+    </button>
 
-  </ion-card>
+    <button ion-button item-right color="dark" clear (click)="editevent(item.ID)" *ngIf="item.HostName==username">
+      <ion-icon name="build" ></ion-icon>
+    </button>
+
+      <p>Host: {{item.HostName}}</p>
+      <p>Description: {{item.Description}}</p>
+
+</ion-card>   
 </ion-content>

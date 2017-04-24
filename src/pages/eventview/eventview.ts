@@ -1,9 +1,11 @@
 ﻿import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { Facebook, NativeStorage } from 'ionic-native';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
+import { DeleteeventPage } from '../deleteevent/deleteevent';
+import { EditeventPage } from '../editevent/editevent';
 /*
   Generated class for the Eventview page.
 
@@ -20,10 +22,12 @@ export class EventviewPage {
     public description: any;
     public eventID: any;
     public data: string;
+    public username: string;
 
-    constructor(public navCtrl: NavController, public params: NavParams, public http: Http) {
+    constructor(public navCtrl: NavController, public params: NavParams, public http: Http, public modalCtrl: ModalController) {
         this.hostname = params.get("hostname");
         this.eventID = params.get("eventID");
+        this.username = "Tom S";
         console.log("ID here: " + this.eventID);
         this.loadevent();
     }
@@ -54,6 +58,18 @@ export class EventviewPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventviewPage');
+  }
+  deleteevent(eventID) {
+      let modal = this.modalCtrl.create(DeleteeventPage, {
+          eventID: eventID
+      });
+      modal.present();
+  }
+  editevent(eventID) {
+      let modal = this.modalCtrl.create(EditeventPage, {
+          eventID: eventID
+      });
+      modal.present();
   }
 
 }

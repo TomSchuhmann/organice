@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 import { FriendsPage } from '../pages/friends/friends';
+import { DeleteeventPage } from '../pages/deleteevent/deleteevent';
+import { EditeventPage } from '../pages/editevent/editevent';
 import { TabsPage } from '../pages/tabs/tabs';
 import { EventviewPage } from '../pages/eventview/eventview';
 import { AddeventviewPage } from '../pages/addeventview/addeventview';
@@ -19,6 +21,8 @@ import { DatePickerModule } from 'datepicker-ionic2';
       MyApp,
       WelcomePage,
       EventviewPage,
+      DeleteeventPage,
+      EditeventPage,
       AddeventviewPage,
     HomePage,
 	SettingsPage,
@@ -36,6 +40,8 @@ import { DatePickerModule } from 'datepicker-ionic2';
       WelcomePage,
       HomePage,
       EventviewPage,
+      DeleteeventPage,
+      EditeventPage,
       AddeventviewPage,
     SettingsPage,
 	FriendsPage,
