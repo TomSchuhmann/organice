@@ -16,8 +16,17 @@ import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/angular2';
 export class EditeventPage {
     public eventID: any;
     data: any;
+
+    public eventdate: any;
+    public eventpicture: any;
+    public eventdescription: any;
+   public eventname: any;
     constructor(public navCtrl: NavController, public navParams: NavParams, private viewCtrl: ViewController, public http: Http) {
         this.eventID = navParams.get("eventID");
+        this.eventname = navParams.get("eventname");
+        this.eventdate = navParams.get("eventdate");
+        this.eventpicture = navParams.get("pictureid");
+        this.eventdescription = navParams.get("description");
     }
 
   ionViewDidLoad() {
@@ -26,14 +35,31 @@ export class EditeventPage {
   delete() {
      
 
-          var eventhostname = "Tom S";
+      var eventhostname = "Tom S";
+      if (this.eventname == null || this.eventname == "") {
           var eventname = String((<HTMLInputElement>document.getElementById('eventname')).value);
-          var eventdate = String((<HTMLInputElement>document.getElementById('eventdate')).value);
-          var eventdescription = String((<HTMLInputElement>document.getElementById('eventdescription')).value);
-          var eventpicture = String((<HTMLInputElement>document.getElementById('eventpicture')).value);
-        
+      } 
 
-          var creds = { eventid: this.eventID, eventname: eventname, eventdate: eventdate, eventdescription: eventdescription, eventpicture: eventpicture, eventhostname: eventhostname };
+      if (this.eventdate == null || this.eventdate == "") {
+          var eventdate = String((<HTMLInputElement>document.getElementById('eventdate')).value);
+      }
+
+      if (this.eventpicture == null || this.eventpicture == "") {
+          var eventpicture = String((<HTMLInputElement>document.getElementById('eventpicture')).value);
+      } 
+
+      if (this.eventdescription == null || this.eventdescription == "") {
+          var eventdescription = String((<HTMLInputElement>document.getElementById('eventdescription')).value);
+      } 
+      
+          
+          
+      eventname = String((<HTMLInputElement>document.getElementById('eventname')).value);
+      eventdate = String((<HTMLInputElement>document.getElementById('eventdate')).value);
+      eventpicture = String((<HTMLInputElement>document.getElementById('eventpicture')).value);
+      eventdescription = String((<HTMLInputElement>document.getElementById('eventdescription')).value);
+
+      var creds = { eventid: this.eventID, eventname: eventname, eventdate: eventdate, eventdescription: eventdescription, eventpicture: eventpicture, eventhostname: eventhostname };
 
           var headers = new Headers();
           headers.append('Content-Type', 'application/x-www-form-urlencoded');

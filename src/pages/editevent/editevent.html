@@ -16,10 +16,10 @@
 <ion-content padding>
   <h2>Edit Event?</h2>
   <form>
-    <p>Event name:-</p><input type="text" id="eventname" />
-    <p>Event date:-</p><input type="date" id="eventdate" />
-    <p>Description:-</p><input type="text" id="eventdescription" />
-    <p>Picture URL:-</p><input type="text" id="eventpicture" />
+    <p>Event name:-</p><input type="text" id="eventname" value="{{eventname}}"/>
+    <p>Event date:-</p><input type="date" id="eventdate" value="{{eventdate}}"/>
+    <p>Description:-</p><input type="text" id="eventdescription" value="{{eventdescription}}"/>
+    <p>Picture URL:-</p><input type="text" id="eventpicture" value="{{eventpicture}}"/>
     
   </form>
   <button ion-button item-right color="dark" clear (click)="delete()">

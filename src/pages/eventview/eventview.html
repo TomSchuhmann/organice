@@ -16,11 +16,11 @@
 <ion-content padding>
   
   <ion-card *ngFor="let item of data">
-    <button ion-button item-right color="dark" clear (click)="deleteevent(item.ID)" *ngIf="item.HostName==username">
+    <button ion-button item-right color="dark" clear (click)="deleteevent(item.ID, item.EventDate, item.Description, item.Name, item.PictureID)" *ngIf="item.HostName==username">
       <ion-icon name="trash" ></ion-icon>
     </button>
 
-    <button ion-button item-right color="dark" clear (click)="editevent(item.ID)" *ngIf="item.HostName==username">
+    <button ion-button item-right color="dark" clear (click)="editevent(item.ID, item.EventDate, item.Description, item.Name, item.PictureID)" *ngIf="item.HostName==username">
       <ion-icon name="build" ></ion-icon>
     </button>
 

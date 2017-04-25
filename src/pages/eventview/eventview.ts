@@ -59,17 +59,34 @@ export class EventviewPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventviewPage');
   }
-  deleteevent(eventID) {
+  deleteevent(eventID, eventdate, description, eventname, pictureid) {
       let modal = this.modalCtrl.create(DeleteeventPage, {
-          eventID: eventID
+          eventID: eventID,
+          eventdate: eventdate,
+          eventname: eventname,
+          description: description,
+          pictureid: pictureid
+          
       });
       modal.present();
+      modal.onDidDismiss(() => {
+          this.navCtrl.pop();
+      });
   }
-  editevent(eventID) {
+
+  editevent(eventID, eventdate, description, eventname, pictureid) {
       let modal = this.modalCtrl.create(EditeventPage, {
-          eventID: eventID
+          eventID: eventID,
+          eventdate: eventdate,
+          eventname: eventname,
+          description: description,
+          pictureid: pictureid
+          
       });
       modal.present();
+      modal.onDidDismiss(() => {
+          this.loadevent();
+      });
   }
 
 }
