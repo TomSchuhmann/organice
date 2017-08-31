@@ -40,8 +40,8 @@ export class DeleteeventPage {
           () => console.log('Completed')
           );
 
-  
-      this.viewCtrl.dismiss();
+      var keep = "false";
+      this.viewCtrl.dismiss(keep);
   
   }
 
@@ -50,6 +50,7 @@ export class DeleteeventPage {
   }
 
   keep() {
-      this.viewCtrl.dismiss();
+      var keep = "true";
+      this.viewCtrl.dismiss(keep);
   }
 }

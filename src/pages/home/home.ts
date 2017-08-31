@@ -15,13 +15,15 @@ import { ProfilePage } from '../profile/profile';
 })
 export class HomePage {
     public data: string;
+    public username: any;
     public firstpassed: any;
     constructor(public navCtrl: NavController, public http: Http) {
-
+       
     }
     ionViewWillEnter() {
         var user = "";
         var pw = "";
+        this.username = "Tom S";
         var creds = { username: user, password: pw };
         var headers = new Headers();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');

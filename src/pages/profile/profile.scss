@@ -11,7 +11,7 @@
 }
 
 #photo_albums {
-  width: 110px;
+  width: 95%;
   height: 200px;
 }
 
@@ -20,5 +20,10 @@
 }
 
 #timelineprofile {
-  width: 275px;
+  width: 95%;
+}
+
+ion-avatar{
+  height:50px;
+  width:50px;
 }

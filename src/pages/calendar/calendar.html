@@ -1,14 +1,14 @@
-<ion-header>
+﻿<ion-header>
   <ion-navbar>
       <ion-buttons end>
         <button ion-button large id="AddEvent" color="dark" clear>
-         <ion-icon name="add-circle-outline"></ion-icon>
+         <ion-icon name="add-circle"></ion-icon>
         </button>
       </ion-buttons>
 
 
       <span ion-datepicker id="Calendar" (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
-        <span>{{localDate | date}} <ion-icon name="clipboard-outline" item-left ></ion-icon> </span>
+        <span>{{localDate | date}} <ion-icon name="clipboard" item-left ></ion-icon> </span>
         </span>
     <ion-title>
       Calendar

@@ -69,8 +69,13 @@ export class EventviewPage {
           
       });
       modal.present();
-      modal.onDidDismiss(() => {
-          this.navCtrl.pop();
+      modal.onDidDismiss((keep) => {
+          if (keep == "true") {
+
+          } else {
+              this.navCtrl.pop();
+          }
+          
       });
   }
 
