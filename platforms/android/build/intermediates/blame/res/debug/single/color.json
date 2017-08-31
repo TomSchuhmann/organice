@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\dmitrus\\ionic2app\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\dmitrus\\ionic2app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\color\\com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\dmitrus\\ionic2app\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "C:\\Users\\dmitrus\\ionic2app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\dmitrus\\Documents\\apps\\ionic2app\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "C:\\Users\\dmitrus\\Documents\\apps\\ionic2app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\dmitrus\\Documents\\apps\\ionic2app\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\dmitrus\\Documents\\apps\\ionic2app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.14.1\\res\\color\\com_facebook_send_button_text_color.xml"
+    }
+]

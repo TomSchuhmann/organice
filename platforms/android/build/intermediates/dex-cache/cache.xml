@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\bolts-applinks-1.4.0_3443ff97c2915b5afcf1ba4c48b1b60d94e16cd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_fc3c5555bbd60eb561bbcee41c3f99d8c27f8f57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03ea17ffbc41fdabd0d6862a64ae5591eebeedc4">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_16af41db149182fa12c89fef729694a6e6b28026.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_4a79b5f0d6e47fc3e33c03252659b1f4eaa0c764.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.4.0_2fc15309490c1ac4dafdd70209b2e1ff49de8285.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\internal_impl-23.4.0_f0b9b9a8443da184cf58cbcf903869f8aabe5b96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afe8eb4906b94df000e2b3714c864ec42d4e4ea6">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_c08f92e8be7af0328be5275e25094c69a1352d2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\support-annotations-23.4.0_b389dfa4a551983d66802ba11e81ad48acfe026e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afe8eb4906b94df000e2b3714c864ec42d4e4ea6">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_84b60ace9242d180e1b9308ed979c05884dad541.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\com.android.support-customtabs-23.4.0_e182cdabda2ed3d0b3abd1ca09c0b0c7338574ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-customtabs-23.4.0_d57b563b15cc5ff43a4bfb2ef3088f694751138c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_222e14e8456205d9638c7541d902002d98921c41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\sqlite-connector_b7f258b2dc156a2fe90fbaeb0ca7a8527f61f6e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\bolts-tasks-1.4.0_b2b28b0697ea7f4202edb3fb217f4bd9f3255f72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.14.1_3f6538767107c020b9631284e080d27b961b1aac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\com.android.support-cardview-v7-23.4.0_1b4ac4095b2d49a6ae31873eeadcebe102fb2f5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="C:\Users\dmitrus\ionic2app\platforms\android\build\intermediates\pre-dexed\release\com.facebook.android-facebook-android-sdk-4.14.1_8e2007e16649f93fa93a3ba83271bcbbddccb2a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\dmitrus\Documents\apps\ionic2app\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_a78c2fdff79c5ecfef417fc5aba8b8b8eaa88e56.jar" />
+    </item>
+
+</items>
