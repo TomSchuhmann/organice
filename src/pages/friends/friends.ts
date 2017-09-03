@@ -37,13 +37,13 @@ export class FriendsPage {
           .map(res => res.json().User) // extract object
 
           .subscribe(
-          data => this.data = data.map(user => user.Name), // here! paste res into variable data
+          data => this.items = data.map(user => user.Name), // here! paste res into variable data
           err => this.logError(err),
           () => console.log('Completed')
           );
 
-
-      this.items = this.data;
+		
+      //this.items = this.data;
   }
 
   initializeItems() {
@@ -65,8 +65,8 @@ export class FriendsPage {
           () => console.log('Completed')
           );
 
-      
-      this.items = this.data;
+      this.data=this.items;
+      //this.items = this.data;
 
       //console.log(JSON.stringify(this.data));
     //this.items = [
@@ -113,7 +113,7 @@ export class FriendsPage {
   getItems(ev) {
     // Reset items back to all of the items
     this.initializeItems();
-
+	
     // set val to the value of the ev target
     var val = ev.target.value;
 
